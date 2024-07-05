@@ -35,3 +35,9 @@ Restart=always
 WantedBy=default.target
 # RequiredBy=nginx.service
 ```
+
+or
+ghcr.io/chrismaster/go-mmproxy:2.1
+
+or
+ghcr.io/chrismaster/kzemek-go-mmproxy:2.2.1
