@@ -38,9 +38,9 @@ WantedBy=default.target
 
 or
 ```
-Image=ghcr.io/chrismaster/go-mmproxy:2.1
+Image=ghcr.io/chrismaster/go-mmproxy/kzemek-go-mmproxy:2.2.1
 ```
 or
 ```
-Image=ghcr.io/chrismaster/kzemek-go-mmproxy:2.2.1
+Image=ghcr.io/chrismaster/go-mmproxy/go-mmproxy:2.1
 ```
