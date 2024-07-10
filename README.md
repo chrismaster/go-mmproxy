@@ -14,7 +14,7 @@ After=local-fs.target
 
 [Container]
 ContainerName=mmproxy
-Image=localhost/go-mmproxy:latest
+Image=ghcr.io/chrismaster/go-mmproxy:latest
 PodmanArgs=--cap-add=NET_ADMIN
 # Volume=%h/mmproxyCONF/allowed-subnets.txt:/conf/allowed-subnets.txt:Z
 
@@ -34,13 +34,4 @@ Restart=always
 # Start by default on boot
 WantedBy=default.target
 # RequiredBy=nginx.service
-```
-
-or
-```
-Image=ghcr.io/chrismaster/go-mmproxy/kzemek-go-mmproxy:2.2.1
-```
-or
-```
-Image=ghcr.io/chrismaster/go-mmproxy/go-mmproxy:2.1
 ```
