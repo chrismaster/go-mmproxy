@@ -2,8 +2,9 @@ FROM golang as builder
 
 WORKDIR /go/app
 
-RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 GOBIN=/go/app go install github.com/path-network/go-mmproxy@latest
-#RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 GOBIN=/go/app go install github.com/kzemek/go-mmproxy@latest
+#RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 GOBIN=/go/app go install github.com/path-network/go-mmproxy@latest
+#RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 GOBIN=/go/app go install github.com/kzemek/go-mmproxy@ba4d783
+RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 GOBIN=/go/app go install github.com/kzemek/go-mmproxy@latest
 
 FROM alpine:latest
 
