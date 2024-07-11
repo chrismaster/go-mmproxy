@@ -1,5 +1,8 @@
 # go-mmproxy
-Docker Image from go-mmproxy
+Docker Image of go-mmproxy
+
+https://github.com/kzemek/go-mmproxy
+
 ```
 podman build --tag go-mmproxy -f Dockerfile
 ```
